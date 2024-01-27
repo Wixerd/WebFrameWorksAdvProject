@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bandmembers",
+  "info": {
+    "singularName": "bandmember",
+    "pluralName": "bandmembers",
+    "displayName": "Bandmembers",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Bio": {
+      "type": "richtext"
+    },
+    "picture": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

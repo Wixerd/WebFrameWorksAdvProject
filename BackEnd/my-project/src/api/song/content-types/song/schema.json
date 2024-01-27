@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "songs",
+  "info": {
+    "singularName": "song",
+    "pluralName": "songs",
+    "displayName": "Song"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "length": {
+      "type": "string"
+    },
+    "feature": {
+      "type": "string"
+    },
+    "album": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::album.album",
+      "inversedBy": "songs"
+    },
+    "musicvideo": {
+      "type": "string"
+    },
+    "releasedate": {
+      "type": "date"
+    },
+    "isSingle": {
+      "type": "boolean"
+    },
+    "singleCover": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

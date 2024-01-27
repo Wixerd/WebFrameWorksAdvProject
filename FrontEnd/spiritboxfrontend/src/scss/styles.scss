@@ -1,0 +1,45 @@
+@import './colors.scss';
+$primary: $Purple;
+$black: $Black;
+$info: $PurpleDim;
+$link: $PurpleBright;
+$white: rgba(0,0,0, 1);
+
+
+
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url(/SpiritboxBG.png);
+}
+
+.navbar {
+    background-color: $white;
+}
+.navbar-start{
+display: flex;
+align-items: center;
+}
+
+.card{
+    width: 700px;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.archive{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap
+}
+
+
+@import 'bulma/bulma'; 
